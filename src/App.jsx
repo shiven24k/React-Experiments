@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Card from './components/Card/card'
 import Conditional from './components/ConditionalRendering/conditionalRendering'
+import Button from './components/Button/Button'
 import lufy from './assets/lufy.jpg'
 import nami from './assets/nami.jpeg'
 import zoro from './assets/zoro.jpg'
@@ -13,6 +14,11 @@ import jinbe from './assets/jinbe.jpeg'
 import franky from './assets/franky.jpeg'
 import robin from './assets/robin.jpeg'
 import List from './components/List/List'
+import ProfilePicture from './components/Button/ProfilePicture'
+import MyComponent from './components/MyComponent/MyComponent'
+import Counter from './components/Counter/Counter'
+import ColorPicker from './components/ColorPicker/ColorPicker'
+import ObjInState from './components/ObjInState/ObjInState'
 
 const characters = {
   lufy,
@@ -62,6 +68,15 @@ function App() {
       {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       {vegetables.length > 0  && <List items={vegetables} category="Vegetables"/>}
       <List/>
+
+      <Button/>
+      <ProfilePicture/>
+
+      <MyComponent/>
+      <Counter/>
+
+      <ColorPicker/>
+      <ObjInState/>
       
     </>
   )

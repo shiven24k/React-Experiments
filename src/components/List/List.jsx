@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-function List ({ category = "Category", items = [{name:"null"},{name:"null"}] }){   
+function List ({ category = "Category", items = [] }){   
 // const fruits = [{id:1,name :"Apple", calories: 98},
 //                 {id:2,name :"Mango", calories: 58},
 //                 {id:3,name :"Papaya", calories: 58},
